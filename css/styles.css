@@ -27,11 +27,15 @@
         margin: 0px;
     }
 
-     ul {
+.list {
         list-style: none;
         margin: 0px;
         padding: 0px;
     }
+.link{
+    text-decoration: none;
+    font: var(--main-font-family);
+}
 
     img{
         display: block;
@@ -64,7 +68,7 @@
     
 }
 
-.nav-logo{
+.logo{
     font-family: var(--secondary-font-family);
     font-size: 26px;
     font-weight: 700;
@@ -73,49 +77,47 @@
     text-decoration: none;
 }
 
-.nav-logo-begin{
+.logo--begin{
     color:var(--accent-color);
    
 }
-.nav-logo-end {
+.logo--end {
     color:var(--title-text-color);
-    
 }
 
-.nav-list{
+.nav{
     display:flex;
     align-items: center; 
     margin-left: 90px;
-
 }
 
-.nav-list-link{
-    color: var(--title-text-color);
-    text-decoration:none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.nav__item{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
-.item:not(:last-child) {
+.nav__link{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;;
+}
+.nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color:var(--accent-color);
 }
 
-.nav-list-link.current {
+.nav__link--current {
     position: relative;
     color:var(--accent-color);
     padding-bottom: 28px;
     
 }
-.nav-list-link.current::after{
+.nav__link--current::after{
     position: absolute;
     bottom: 0;
     left:0;
@@ -132,33 +134,31 @@
     margin-left: auto;
 
 }
-.contacts-item{
+.contacts__item{
     align-items: center; 
     color:rgba(117, 117, 117, 1)   
     ;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.contacts>li:not(:last-child){
+.contacts__item:not(:last-child){
     margin-right: 50px;
 }
-.contacts-item>:hover,
-.contacts-item>:focus{
+.contacts__item>:hover,
+.contacts__item>:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
     
 }
 
-.envelope{
+.contacts__envelope{
     display: block;
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill:currentColor;
     
 }
 
-.contacts-mail{
+.contacts__mail{
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -171,16 +171,14 @@
 
 }
 
-.phone{
+.contacts__phone{
     display: block;
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
     fill:currentColor;
 
 }
 
-.contacts-phone{
+.contacts__number{
     display: flex;
     align-items: center;
     font-weight: 500;
