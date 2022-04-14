@@ -16,9 +16,8 @@
    <header class="header">
     <div class="container container__header">
         <nav class="nav">
-            <a href="" class="logo"> <span class=logo--begin>Web</span> <span
-                class=logo--end>Studio</span></a>
-
+            <a href="" class="logo"> <span class=logo__begin>Web</span> <span
+                class=logo__end>Studio</span></a>
             <ul class="nav list">
                 <li class="nav__item"><a href="./index.html" class="nav__link link">Студия</a></li>
                 <li class="nav__item"><a class="nav__link--current link" href="./portfolio.html">Портфолио</a></li>
@@ -200,75 +199,76 @@
 
         </main>
         <footer class="footer">
-            <div class="container footer-container">
-                <div class="logo-part">
-                    <a class="footer-logo" href=""><span class=footer-logo-begin>Web</span> <span class=footer-logo-end>Studio</span></a>
+            <div class="container footer__container">
+                <div>
+                    <a href="" class="logo footer__logo"> <span class=logo__begin>Web</span> <span
+                        class=logo__end--reverse>Studio</span></a>
                     <address class="add">
-                        <p class="post-add">г. Киев, пр-т Леси Украинки, 26</p>
-                        <ul class="add-info">
-                            <li><a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <p class="add__post">г. Киев, пр-т Леси Украинки, 26</p>
+                        <ul class="list">
+                            <li><a class="add__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
                             </li>
-                            <li><a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                            <li><a class="add__contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
                         </ul>
                     </address>
                 </div>
-                    <div class="join-part">
-                        <h3 class="title-join">ПРИСОЕДИНЯЙТЕСЬ</h3>
-                        <ul class="social-net">
-                            <li class="net-name-footer">
-                                <a class="footer-link" href="">
-                                     <svg width="20px" height="20px" class="social-item">
-                                         <use
-                                             href="./Images/symbol-defs.svg#instagram">
-                                         </use>
-                                     </svg>
-                                 </a>
-                             </li>
-                             <li class="net-name-footer">
-                                <a class="footer-link" href="">
-                                 <svg width="20px" height="16px" class="social-item">
-                                     <use
-                                         href="./Images/symbol-defs.svg#twitter">
-                                     </use>
-                                 </svg>
+                    <div class="join">
+                        <h3 class="join__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                        <ul class="social-net join__net list">
+                            <li class="social-net__item join__item">
+                               <a class="social-net__link" href="">
+                                    <svg width="20px" height="20px" class="social-net__icon join__icon">
+                                        <use
+                                            href="./Images/symbol-defs.svg#instagram">
+                                        </use>
+                                    </svg>
                                 </a>
-                             </li>
-                             <li class="net-name-footer">
-                                 <a class="footer-link" href="">
-                                     <svg width="20px" height="20px"  class="social-item">
-                                         <use
-                                             href="./Images/symbol-defs.svg#facebook">
-                                         </use>
-                                     </svg>
-                                 </a>
-                             </li>
-                             <li class="net-name-footer">
-                                 <a class="footer-link" href="">
-                                     <svg width="20px" height="20px" class="social-item">
-                                         <use
-                                             href="./Images/symbol-defs.svg#linkedin">
-                                         </use>
-                                     </svg>
-                                 </a>
-                             </li>
+                            </li>
+                            <li class="social-net__item join__item">
+                               <a class="social-net__link" href="">
+                                <svg width="20px" height="16px" class="social-net__icon join__icon">
+                                    <use
+                                        href="./Images/symbol-defs.svg#twitter">
+                                    </use>
+                                </svg>
+                               </a>
+                            </li>
+                            <li class="social-net__item join__item">
+                                <a class="social-net__link" href="">
+                                    <svg width="20px" height="20px"  class="social-net__icon join__icon">
+                                        <use
+                                            href="./Images/symbol-defs.svg#facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-net__item join__item">
+                                <a class="social-net__link" href="">
+                                    <svg width="20px" height="20px" class="social-net__icon join__icon">
+                                        <use
+                                            href="./Images/symbol-defs.svg#linkedin">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
 
                     </div>
-                    <div class="subscribe-form">
-                        <form>
-                            <h3 class="title-join">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                        <label for="subscribe"></label>
-                        <div class="subscribe-field"><input class="footer-input" type="email" name="subscribe" id="subscribe" placeholder="E-mail">
-                            <button class="subscribe-btn" type="submit">Подписаться
-                                <svg class="subscribe-icon" width="24px" height="24px">
-                                    <use href="./Images/symbol-defs.svg#send">
-                                    </use>
-                                </svg>
-                            </button></div>
-                        
-                        </form>
-                    </div>
-            </div>
+                <div class="subscribe">
+                    <form>
+                        <h3 class="join__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                    <label  for="subscribe"></label>
+                    <div class="subscribe__field"><input class="subscribe__input" type="email" name="subscribe" id="subscribe" placeholder="E-mail">
+                        <button class="subscribe__btn" type="submit">Подписаться
+                            <svg class="subscribe__icon" width="24px" height="24px">
+                                <use href="./Images/symbol-defs.svg#send">
+                                </use>
+                            </svg>
+                        </button></div>
+                    
+                    </form>
+                </div>
+            </div> 
         </footer>
 </body>
 </html>
