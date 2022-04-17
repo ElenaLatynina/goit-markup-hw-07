@@ -4,7 +4,7 @@
 
 }
 .contacts__item{
-    // list-style: none;
+    list-style: none;
     align-items: center; 
     color:rgba(117, 117, 117, 1)   
     ;
@@ -16,9 +16,9 @@
 
 .contacts__item:hover,
 .contacts__item:focus{
-    color: var(--accent-color);
-    fill: var(--accent-color);}
-
+    color:var(--accent-color);
+    fill: var(--accent-colo);}
+    
 
 .contacts__envelope{
     display: block;
