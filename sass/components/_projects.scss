@@ -7,11 +7,14 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+  
+}
+.project__item{
+    list-style: none;
 
     &:not(:last-child){
         margin-right: 8px;
     }
-
 }
 
 .project__button { 
